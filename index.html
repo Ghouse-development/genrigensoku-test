@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>経営の原理原則クイズ</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Noto+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="text-gray-800">
+    <div id="app-container" class="container mx-auto p-4 md:p-8 max-w-5xl">
+
+        <div id="home-page" class="page">
+            <div class="bg-white p-8 rounded-lg shadow-xl text-center max-w-2xl mx-auto">
+                <h1 class="text-2xl md:text-3xl font-bold text-gray-900 mb-2">経営の原理原則クイズ</h1>
+                <p class="text-gray-600 mb-6">全講座の原理原則を問う</p>
+                <div class="mb-6">
+                    <label for="name-input" class="block text-left text-sm font-medium text-gray-700 mb-1">氏名（漢字・フルネーム）を入力してください</label>
+                    <input type="text" id="name-input" class="w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500" placeholder="例：山田 太郎">
+                </div>
+
+                <div id="quiz-selection" class="space-y-4 text-left">
+                </div>
+
+                <button id="dashboard-btn-home" class="w-full mt-8 bg-gray-600 text-white py-3 px-6 rounded-lg hover:bg-gray-700 transition-colors text-lg font-semibold">
+                    学習状況ダッシュボードを見る
+                </button>
+            </div>
+        </div>
+
+        <div id="quiz-page" class="page">
+        </div>
+
+        <div id="result-page" class="page">
+        </div>
+
+        <div id="dashboard-page" class="page">
+        </div>
+
+    </div>
+
+    <script type="module" src="app.js"></script>
+</body>
+</html>
